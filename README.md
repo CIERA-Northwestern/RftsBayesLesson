@@ -22,4 +22,4 @@ Steps to run this notebook:
 
 3) Run:
 
-	jupyter notebook bayes.ipynb
+		jupyter notebook bayes.ipynb
