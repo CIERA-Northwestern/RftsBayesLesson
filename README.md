@@ -1,7 +1,7 @@
 # RftsBayesLesson
 Reach for the Stars basic lesson on Bayesian versus Frequentist Statistics
 
-For 
+For information on the lesson, please see the [lesson plan](https://github.com/CIERA-Northwestern/RftsBayesLesson/blob/master/lesson_plan.pdf)
 
 Steps to run this notebook:
 
