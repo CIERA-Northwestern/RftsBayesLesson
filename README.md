@@ -13,7 +13,5 @@ Steps to run this notebook:
 
  	C) Run: 
 
- 		```
  		conda create -n bayes_env jupyter ipython numpy scipy matplotlib python=3.7
- 		```
 
