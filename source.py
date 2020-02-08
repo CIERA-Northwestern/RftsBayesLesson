@@ -76,11 +76,18 @@ def make_plot(h_t_list):
 
 def make_real_flip_plot(h_t_list, prior_mean, prior_standard_deviation):
     for H, T in h_t_list:
+
+        N = H + T
+        z = H
+        a,b = from_mu_sigma(prior_mean, prior_standard_deviation)
+        post_a = z+a
+        post_b = N-z+b
+
         fig = plt.figure()
         fig.set_size_inches(8.0, 5.0)
         ax = plt.gca()
         plot_beta_distribution(ax, mu=prior_mean, sigma=prior_standard_deviation, **{'color':'blue', 'label':'prior'})
-        prob_fair = get_prob_fair(H, T)
+        prob_fair = get_prob_fair(post_a, post_b)
         ax.set_title('H: %i  T:%i  P(fair): %.2g'%(H,T, prob_fair), fontsize=20)
     
         posterior(H,T, prior_mean, prior_standard_deviation, ax, kwargs={'color':'red', 'label':'posterior'})
