@@ -11,5 +11,7 @@ Steps to run this notebook:
 
  	B) Open a terminal
 
- 	C) Run: ```conda create -n bayes_env jupyter ipython numpy scipy matplotlib python=3.7```
+ 	C) Run: 
+
+ 		```conda create -n bayes_env jupyter ipython numpy scipy matplotlib python=3.7```
 
