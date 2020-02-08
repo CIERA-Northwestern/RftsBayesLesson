@@ -14,4 +14,12 @@ Steps to run this notebook:
  	C) Run: 
 
  		conda create -n bayes_env jupyter ipython numpy scipy matplotlib python=3.7
+ 		conda activate bayes_env
 
+1) You can git clone this repository or right click on "clone or download" and then "download zip"
+
+2) Navigate to the "RftsBayesLesson" folder.
+
+3) Run:
+
+	jupyter notebook bayes.ipynb
